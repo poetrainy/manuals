@@ -1,2 +1,1 @@
-React + Vite のテンプレート
-中身は[こっち](https://zenn.dev/poetrainy/articles/ae71a1f8a0c3ee)
+自宅の家電の取説を確認するサイト
