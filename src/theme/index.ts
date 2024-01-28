@@ -1,19 +1,24 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
-  sub: "#4a5566",
-  red: "#ff5d3d",
-  yellow: "#ffab2e",
-  blue: "#5e8aeb",
+  black: "#999999",
+  primary: {
+    900: "#021a1e",
+    800: "#04343b",
+    700: "#064d59",
+    500: "#086776",
+    400: "#468d98",
+    300: "#84b3bb",
+    200: "#c1d9dd",
+    50: "#f4f6f6",
+  },
 };
 const styles = {
   global: {
-    html: {
-      fontSize: "62.5%",
-    },
     body: {
       color: "black",
-      fontSize: "1.4rem",
+      bg: "primary.50",
+      fontSize: "14px",
       fontFamily: "body",
       a: {
         textDecoration: "none",
@@ -26,39 +31,25 @@ const styles = {
         whiteSpace: "pre-wrap",
       },
     },
-    "::selection": {
-      background: "tomato",
+    svg: {
+      fill: "primary",
     },
-    "::-moz-selection": {
-      background: "tomato",
-    },
+    // "::selection": {
+    //   background: "tomato",
+    // },
+    // "::-moz-selection": {
+    //   background: "tomato",
+    // },
   },
 };
 const fonts = {
   body: "'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif",
-};
-const breakpoints = {
-  sm: "500px",
-  md: "640px",
-  lg: "820px",
-  // example
-};
-const textStyles = {
-  bodyWidth: {
-    width: {
-      base: "90vw",
-      sm: "80vw",
-    },
-    mx: "auto",
-  },
 };
 
 const theme = extendTheme({
   styles,
   colors,
   fonts,
-  textStyles,
-  breakpoints,
 });
 
 export default theme;
