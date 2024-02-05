@@ -1,9 +1,5 @@
 import { Center, Flex, Link, Text } from "@chakra-ui/react";
-import IconWasher from "~/components/IconWasher";
-
-import MANUAL_WASHER from "~/assets/manuals/washer.pdf";
-
-const MANUALS = [{ label: "洗濯機", file: MANUAL_WASHER, icon: IconWasher }];
+import { MANUALS } from "~/data/manuals";
 
 const Home = () => {
   return (
